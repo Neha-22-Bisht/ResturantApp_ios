@@ -52,6 +52,10 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         itemvc?.selectedCategoryName = productName[indexPath.item]
         self.navigationController?.pushViewController(itemvc!, animated: true)
     }
+    @IBAction func logoutButton(_sender: Any){
+        self.navigationController?.popToRootViewController(animated: true)
+
+    }
 
 }
 

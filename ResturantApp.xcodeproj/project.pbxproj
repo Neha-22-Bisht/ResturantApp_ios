@@ -21,6 +21,8 @@
 		44FBC2162BC7E7ED006691E5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBC2142BC7E7ED006691E5 /* TableViewCell.swift */; };
 		44FBC2172BC7E7ED006691E5 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FBC2152BC7E7ED006691E5 /* TableViewCell.xib */; };
 		44FBC2192BCE4E90006691E5 /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBC2182BCE4E90006691E5 /* detailsViewController.swift */; };
+		44FBC21B2BCFEC00006691E5 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBC21A2BCFEC00006691E5 /* OrderViewController.swift */; };
+		44FBC21D2BD20A45006691E5 /* OrderSummery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBC21C2BD20A45006691E5 /* OrderSummery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		44FBC2142BC7E7ED006691E5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		44FBC2152BC7E7ED006691E5 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		44FBC2182BCE4E90006691E5 /* detailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
+		44FBC21A2BCFEC00006691E5 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		44FBC21C2BD20A45006691E5 /* OrderSummery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		44FBC1732BBE46FD006691E5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				44FBC21C2BD20A45006691E5 /* OrderSummery.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 				44FBC2142BC7E7ED006691E5 /* TableViewCell.swift */,
 				44FBC2152BC7E7ED006691E5 /* TableViewCell.xib */,
 				44FBC2182BCE4E90006691E5 /* detailsViewController.swift */,
+				44FBC21A2BCFEC00006691E5 /* OrderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FBC1812BC3ECC1006691E5 /* ItemViewController.swift in Sources */,
+				44FBC21B2BCFEC00006691E5 /* OrderViewController.swift in Sources */,
 				44FBC1322BBBE71D006691E5 /* HomeViewController.swift in Sources */,
 				44FBC1772BBE478E006691E5 /* SignupViewController.swift in Sources */,
 				44FBC2162BC7E7ED006691E5 /* TableViewCell.swift in Sources */,
@@ -197,6 +204,7 @@
 				44FBC1792BBE8540006691E5 /* LoginViewController.swift in Sources */,
 				44FBC2192BCE4E90006691E5 /* detailsViewController.swift in Sources */,
 				44FBC11E2BBBA481006691E5 /* SceneDelegate.swift in Sources */,
+				44FBC21D2BD20A45006691E5 /* OrderSummery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

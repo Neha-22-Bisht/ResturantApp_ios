@@ -15,17 +15,17 @@ class ItemViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     @IBOutlet weak var tableView: UITableView!
     
     //variables
-    var selectedItems:[(itemName: String, itemimage: String)] = []
+    var selectedItems:[(itemName: String, itemimage: String, description: String)] = []
     var selectedCategoryName: String = ""
     
     // used to feed the data in tableview
-    let itemDetails: [String : [(itemName: String, itemimage: String)]] = [
-"Staters": [("Vegkabab", "Vegkabab"), ("samosa", "Samosa"),("Idli", "IdliSambhar")],
-                                            "Softdrinks": [("sprite", "Sprite"), ("coco-cola", "Cocacola"),("pepsi", "Pepsi")],
-                                            "Veg" : [("Rajma", "RajmaChawal"), ("chole", "CholeBhature"),("buttermakki", "DalMakhni")],
-                                            "Non-Veg" : [("Chicken", "Chicken"), ("Biryani", "Biryani"),("Mutton", "Mutton")],
-                                            "Desserts" : [("kheer", "Kheer"), ("gajar halwa", "Gajar Halwa "),("rasmalai", "Rasmalai ")],
-                                            "Water Bottles" :[("Bisleri", "Bisleri"), ("aquafina", "Aquafina"),("Kinley", "kinley")]]
+    let itemDetails: [String : [(itemName: String, itemimage: String, description: String)]] = [
+"Staters": [("Vegkabab", "Vegkabab","Veg kabab is very delicious food"), ("samosa","Samosa", "SaSamosa is very delicious food")],
+                                            "Softdrinks": [("sprite", "Sprite","Sprite is very refreshing drink"), ("coco-cola", "Cocacola","cocacola is very refreshing drink"),("pepsi", "Pepsi","Pepsi is very refreshing drink")],
+                                            "Veg" : [("Rajma", "RajmaChawal","Rajma chawal is very delicious food"), ("chole", "CholeBhature","CholeBhatura is very delicious food"),("buttermakki", "DalMakhni","dal makhni is very delicious food")],
+                                            "Non-Veg" : [("Chicken", "Chicken","Schicken is very delicious food"), ("Biryani", "Biryani","Biryani is very delicious food"),("Mutton", "Mutton","Mutton is very delicious food")],
+                                            "Desserts" : [("kheer", "Kheer","kheer is very delicious food"), ("gajar halwa", "Gajar Halwa ","gajar halwa is very delicious food"),("rasmalai", "Rasmalai ","rasmalai is very delicious food")],
+                                            "Water Bottles" :[("Bisleri", "Bisleri","mineral water"), ("aquafina", "Aquafina","mineral water"),("Kinley", "kinley","mineral water")]]
     
     
     override func viewDidLoad() {
@@ -56,8 +56,7 @@ class ItemViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let dvc = storyboard.instantiateViewController(withIdentifier: "detailsViewController") as! detailsViewController
-        dvc.getImage = UIImage(named: selectedItems[indexPath.row].itemimage)
-        dvc.getdescription = selectedItems[indexPath.row].itemName
+        dvc.selecteditem = selectedItems[indexPath.row]
         self.navigationController?.pushViewController(dvc, animated: true)
     }
 }
