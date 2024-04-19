@@ -20,7 +20,7 @@ class OrderViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    // Action for done button. 
     @IBAction func doneButton(_sender:Any){
         self.navigationController?.popToRootViewController(animated: true)
     }
