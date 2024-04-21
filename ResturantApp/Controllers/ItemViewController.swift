@@ -55,7 +55,7 @@ class ItemViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let dvc = storyboard.instantiateViewController(withIdentifier: "detailsViewController") as! detailsViewController
+        let dvc = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
         dvc.selecteditem = selectedItems[indexPath.row]
         self.navigationController?.pushViewController(dvc, animated: true)
     }

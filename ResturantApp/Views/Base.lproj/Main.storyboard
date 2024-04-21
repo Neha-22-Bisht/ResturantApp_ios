@@ -384,7 +384,7 @@
         <!--Details View Controller-->
         <scene sceneID="yKz-SF-Czy">
             <objects>
-                <viewController storyboardIdentifier="detailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uol-ZY-ByW" customClass="detailsViewController" customModule="ResturantApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uol-ZY-ByW" customClass="DetailsViewController" customModule="ResturantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jhw-vT-8Qm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

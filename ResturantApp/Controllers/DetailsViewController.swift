@@ -1,5 +1,5 @@
 //
-//  detailsViewController.swift
+//  DetailsViewController.swift
 //  ResturantApp
 //
 //  Created by Kamal Harariya on 4/15/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class detailsViewController: UIViewController {
+class DetailsViewController: UIViewController {
     @IBOutlet weak var showImage:UIImageView!
     @IBOutlet weak var descriptionLabel:UILabel!
     
